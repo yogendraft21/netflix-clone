@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+    color: #999999;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.showcase{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("/img/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.showcase::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* box-shadow: rgba(0, 0, 0, 0.25) 100px 100px 100px 12px inset, rgba(0, 0, 0, 0.3) 100px 100px 100px 18px inset; */
+}
+.showcase-top{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+.showcase-top img{
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40%,-50%);
+}
+.login__body{
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    height: 500px;
+    max-width: 450px;
+    margin-left: 50%;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+.login__body h2{
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.login__body input{
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    color: #fff;
+    background: #333;
+    border: 1px solid #333;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+.input__wrap{
+    margin-bottom: 25px;
+}
+.login__body button{
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 5px;
+    /* border: none;
+    outline: none; */
+    font-weight: 500;
+    font-size: 16px;
+}
+.support{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.support input{
+    width: 15px;
+    height: 15px;
+}
+.remember{
+    display: flex;
+    align-items: center;
+}
+.remember span{
+    margin-right: 10px;
+    height: 25px;
+}
+
+.login__facebook{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #737373;
+    margin: 10px 0px 10px 0;
+}
+.login__facebook img{
+    width: 20px;
+    height: 20px;  
+    background-color: #fff; 
+}
+.login__facebook span{
+    margin-right: 10px;
+    font-size: 13px;
+}
+.sign__up{
+    color: #737373;
+    font-size: 13px;
+    margin: 5px 0px 5px 0px;
+}
+.sign__up a{
+    color: #fff;
+    font-size: 16px;
+}
+.terms{
+    margin-top: 10px;
+}
